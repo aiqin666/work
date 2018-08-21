@@ -1,0 +1,76 @@
+
+$mainColor:#33A1DB;
+*{box-sizing:border-box;}
+
+#mainx{
+    width: 100%;padding-top:16px;background:#FBFBFB;
+    p{font-size:12px;
+        i{color:$mainColor;font-size:14px;}
+        a{display: inline-block;color:$mainColor;margin-left:5px;
+        
+            &:hover{color:#F6AB00;text-decoration:none;}
+        }
+    }
+
+    ul{width: 100%;height: 37px;border:2px solid #ddd;margin-top:10px;
+        li{float:left;
+
+            span{display: block;line-height:36px;height:36px;text-align: center;border-right:1px solid #ddd;padding:0 20px;
+                i{padding-left:5px;color:#727272;}
+            }
+        }
+    }
+
+
+    .goodslist{width: 100%;clear:both;
+        li{
+            float:left;width: 222px;height: 386px;border:1px solid #ddd;
+            padding:0 10px;margin:16px 18px 0 0;position:relative;
+
+           img{display: block;width: 200px;height: 200px;
+            }
+
+            
+           .name{
+                color:#F6AB00;margin-top:40px;
+           }
+           .title{color:$mainColor;}
+           .price span{
+
+                color:#F6AB00;font-size:14px;font-weight:bold;margin-right:5px;
+           }
+           .price::before{
+                content:"￥";
+                color:#F6AB00;font-size:14px;font-weight:bold;
+           }
+        }
+
+            i{margin-right:5px;}
+            .span1{position:absolute;left:0;bottom:0;width: 111px;height: 30px;background:#F6AB00;line-height:30px;height: 30px;text-align: center;color:#fff;
+            }
+            .span2{position:absolute;right:0;bottom:0;width: 111px;height: 30px;background:$mainColor;line-height:30px;height: 30px;text-align: center;color:#fff;}
+    }
+
+
+     
+    
+    .best{
+        p{height: 40px;background:$mainColor;margin-top:40px;padding-left:10px;
+            span{
+                line-height:40px;text-align:left;color:#fff;font-size:16px;
+            }
+        }
+    }
+    
+    .bestgoods{
+        @extend .goodslist;
+        height:410px;overflow:hidden;
+    }
+
+
+   
+
+}
+
+
+

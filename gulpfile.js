@@ -1,10 +1,28 @@
-/* 
-* @Author: Marte
-* @Date:   2018-08-18 09:40:28
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-08-18 09:40:34
-*/
 
-$(document).ready(function(){
+// 引入
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+
+
+
+gulp.task('compileSass',function(){
+    // 执行任务时，会执行这里的代码
+
+    // 在此把sass编译成css
+    // 2.找出sass文件
+    gulp.src(['./src/sass/*.scss']) //返回一个文件流
+
+    // 编译scss->css
+    .pipe(sass({outputStyle:'compact'}))// 得到css文件流
+
     
+    // 输出到硬盘
+    .pipe(gulp.dest('./src/css/'))
+});
+
+
+// 自动化编译
+gulp.task('autoSass',function(){
+    // 监听文件修改，如果有修改，则执行compileSass任务
+    gulp.watch('./src/sass/*.scss',['compileSass']);
 });

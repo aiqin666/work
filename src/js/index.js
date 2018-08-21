@@ -15,9 +15,19 @@
 
             $('#top').load('../src/html/list.html #header',function(){
 
+
+
             });
 
             $('#nav').load('../src/html/list.html #nav',function(){
+
+                $('h1').on('click',function(){
+                    $('h1').next('ul').slideToggle('slow');
+
+
+                });
+
+
 
             });
 
