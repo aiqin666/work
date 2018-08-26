@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>列表页</title>
+        <!-- <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> 
+        <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> 
+        <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+ -->
+
         <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
         <link rel="stylesheet" href="../css/base.css" /> 
         <link rel="stylesheet" href="../css/index.css" />
@@ -10,7 +15,100 @@
          
     </head>
     <body>
-        <header id="top"></header>
+        <!-- 头部 -->
+             <div id="header">
+                <div class="header_t clearfix">
+                    <div class="header_tl fl">
+                        <span>Hi,欢迎来到如此生活</span>
+                        <span><a href="login.html">登录</a></span>
+                        <span><a href="register.html">免费注册</a></span>
+                        <span><a href="#"><i class="weixin iconfont icon-gongzhonghao"></i></a></span>
+                        <span><a href="#"><i  class="weibo iconfont icon-weibo"></i></a></span>
+
+                        <div class="wx_erweima clearfix">
+                            <div class="title clearfix">
+                                <h4 class="fl">关注<i>如此生活</i>官方微信</h4>
+                                <span class="fr guanbi">&times;</span>
+                            </div>
+                            <div class="content">
+                                <img src="../img/wx_erweima.jpg" height="200" width="200" alt="" />
+                            </div>
+                            <p class="close fr">关闭</p>
+                        </div>
+                        <div class="wb_erweima">
+                            <div class="title clearfix">
+                                <h4 class="fl">关注<i>如此生活</i>官方微博</h4>
+                                <span class="fr guanbi">&times;</span>
+                            </div>
+                            <div class="content">
+                                <img src="../img/wb_erweima.jpg" height="200" width="200" alt="" />
+                            </div>
+                            <p class="close fr">关闭</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="header_tr fr">
+                        <span class="shenghuo">我的生活
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="shenghuoul">
+                                <li>我的订单</li>
+                                <li>星币查询</li>
+                                <li>余额查询</li>
+                                <li>我的优惠卷</li>
+                            </ul>
+                        </span>
+                        <span><a href="register.html">商家入驻</a></span>
+                        <span class="bangzu">帮助中心
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="bangzuul">
+                                <li>帮助首页</li>
+                                <li>售后服务</li>
+                                
+                            </ul>
+                        </span>
+                        <span class="last gengduo">更多导航
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="gengduoul">
+                                <li>首页</li>
+                                <li>海外精品</li>
+                                <li>星范儿</li>
+                                <li>星特惠</li>
+                                <li>星粉专区</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="header_c clearfix">
+                    <div class="fl header_c1"><a href="#"><img src="img/logo.png" /></a></div>
+                    <div class="fl header_c2">
+                        <div class="header_c2t">
+                            <span>商品</span>
+                            <span>店铺</span>
+                        </div>
+                        <div class="header_c2c">
+                            <input type="text" placeholder="格力" /><button class="btnSearch">搜索</button>
+                        </div>
+                        <ul class="clearfix header_c2b">
+                            <li class="fl"><a href="#">山茶油</a></li>
+                            <li class="fl"><a href="#">iphone X</a></li>
+                            <li class="fl"><a href="#">COACH</a></li>
+                            <li class="fl"><a href="#">韩都衣舍</a></li>
+                            <li class="fl"><a href="#">ARTIART不倒杯</a></li>
+                            <li class="fl"><a href="#">清风</a></li>
+                            <li class="fl"><a href="">三只蚂蚁</a></li>
+                            <li class="fl last"><a href="#">卡罗特</a></li>
+                        </ul>
+                    </div>
+                    <div class="fl header_c3 clearfix">
+                        <a href="#"><img src="img/phone.png" class="fl phone" /></a>
+                        <b><a href="#">400-068-5151</a></b>
+                        <b><a href="#">021-2356002</a></b>
+                        <p><a href="#">服务热线|周一至周日&nbsp;9:00-21:00</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            
          <div id="nav" class="clearfix">
                     <h1 class="fl"><a href="#">全部商品分类<i class="glyphicon glyphicon-menu-down"></i></a></h1>
                     <ul>
@@ -1027,7 +1125,7 @@
                         </li>
                     </ul>
                     <div class="fl list">
-                        <span class="span0"><a href="#">首页</a></span>
+                        <span class="span0"><a href="../index.html" target="_blank">首页</a></span>
                         <span class="span0"><a href="#">海外精品</a></span>
                         <span class="span0"><a href="#">星范儿</a></span>
                         <span class="span0"><a href="#">星特惠</a></span>
@@ -1041,15 +1139,16 @@
                 <ul class="clearfix">
                     <li><span>排序</span></li>
                     <li><span>默认</span></li>
-                    <li><span>价格<i class="glyphicon glyphicon-arrow-down"></i></span></li>
-                    <li><span>销量<i class="glyphicon glyphicon-arrow-down"></i></span></li>
-                    <li><span>人气<i class="glyphicon glyphicon-arrow-down"></i></span></li>
-                    <li><span>上架时间<i class="glyphicon glyphicon-arrow-down"></i></span></li>
+                    <li><span>价格<i class="glyphicon glyphicon-arrow-down jiagedown"></i><i class="glyphicon glyphicon-arrow-up jiageup"></i></span></li>
+                    <li><span>销量<i class="glyphicon glyphicon-arrow-down xiaoliangdown"></i><i class="glyphicon glyphicon-arrow-up xiaoliangup"></i></span></li>
+                    <li><span>人气<i class="glyphicon glyphicon-arrow-down renqidown"></i><i class="glyphicon glyphicon-arrow-up renqiup"></i></span></li>
+                    <li><span>上架时间<i class="glyphicon glyphicon-arrow-down datedown"></i><i class="glyphicon glyphicon-arrow-up dateup"></i></span></li>
 
                 </ul>
                 <div class="list">
                     <div class="goodslist clearfix">
-
+                    
+                    <a href="car.html">去结算</a>
                     </div>
                     <div class="best">
                         <p><span>热销推荐 HOT SALES REANKING</span></p>
@@ -1065,10 +1164,122 @@
 
 
 
-        <footer id="footer"></footer>
+        <!-- footer -->
+            <div id="footer">
+                <div class="footer_t clearfix">
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-tubiaozhizuomoban- fl"></i>
+                        <div class="fl">
+                            <p>新手指南</p>
+                            <span><a href="#">免费注册</a></span>
+                            <span><a href="#">搜索商品</a></span>
+                            <span><a href="#">购买流程</a></span>
+                            <span><a href="#">评论晒单</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-feiji- fl"></i>
+                        <div class="fl">
+                            <p>配送方式</p>
+                            <span><a href="#">配送方式</a></span>
+                            <span><a href="#">配送指南</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-zhifufangshi fl"></i>
+                        <div class="fl">
+                            <p>支付方式</p>
+                            <span><a href="#">支付宝支付</a></span>
+                            <span><a href="#">银联卡支付</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-qiantaifuwu- fl"></i>
+                        <div class="fl">
+                            <p>售后服务</p>
+                            <span><a href="#">售后政策</a></span>
+                            <span><a href="#">退款说明</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-xinxinicon fl"></i>
+                        <div class="fl">
+                            <p>招商合作</p>
+                            <span><a href="#">商家入驻</a></span>
+                            <span><a href="#">企业会员</a></span>
+                        </div>
+                    </div>
+                      <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-fuwu fl"></i>
+                        <div class="fl">
+                            <p>购物指南</p>
+                            <span><a href="#">星币说明</a></span>
+                            <span><a href="#">交易条款</a></span>
+                            <span><a href="#">购物流程</a></span>
+                            <span><a href="#">注册流程</a></span>
+                            <span><a href="#">常见问题</a></span>
+                        </div>
+                    </div>     
+                </div>
+                <div class="footer_c clearfix">
+                    <div class="footer_c1 fl clearfix">
+                        <a href="#">
+                            <img src="img/footer1.png"  class="img fl" />
+                            <b class="fl">020双线开放</b>
+                            <p class="fl">
+                                <i class="span1">线上分享互联网广告资源</i>
+                                <i class="span2">线下分享多门店粉丝资源</i>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer_c2 fl">
+                        <a href="#">
+                            <img src="img/footer2.png"  class="img fl" />
+                            <b class="fl">N多服务吃到饱</b>
+                            <p class="fl">
+                                <i class="span1">商家免运营，商家免开店，商家免推广</i>
+                                <i class="span2">电脑，手机，平板，电视和社会化媒体等引流资源</i>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer_c3 fl">
+                        <a href="#">
+                            <img src="img/footer3.png"  class="img fl" />
+                            <b class="fl">核心优势</b>
+                            <p class="fl">
+                                <i class="span1">互动体验强，粉丝经济好</i>
+                                <i class="span2">空间范围广，增值服务多</i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_b">
+                    <div class="footer_b1">
+                        <span><a href="#">关于我们</a></span>
+                        <span><a href="#">联系我们</a></span>
+                        <span><a href="#">品牌介绍</a></span>
+                        <span><a href="#">商家入驻</a></span>
+                        <span><a href="#">友情链接</a></span>
+                        <span><a href="#">法律声明</a></span>
+                        <span><a href="#">出版物许可证</a></span>
+                    </div>
+                    <p>@ 2016-2018 如此生活 版权所有 沪ICP备11038000号-2</p>
+                </div>
+                <!-- 固定右边 -->
+                <div class="fix">
+                    <a class="fix1" href="#"><img src="img/jingling.png" height="28" width="30" alt="" /></a>
+                    <a class="fix2 " href="car.html"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                    <a class="fix3 " href="#"><i class="glyphicon glyphicon-briefcase"></i></a>
+                    <a class="fix4" href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+                    <a class="fix5" href="#"><i class="glyphicon glyphicon-star-empty"></i></a>
+                    <a class="fix6" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a class="fix7" href="#"><i class="glyphicon glyphicon-user"></i></a>
+                    <a class="fix8" href="#"><i class=" toTop glyphicon glyphicon-eject"></i></a>
+                </div>  
+            </div>
         <script src="../js/jquery-3.2.1.js"></script>
         <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-        
+        <script src="../js/common.js"></script>
         <script src="../js/goodslist.js"></script>
     </body>
 </html>

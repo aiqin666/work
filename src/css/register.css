@@ -1,0 +1,39 @@
+#register { width: 100%; margin-bottom: 100px; }
+
+#register .top { height: 98px; border-bottom: 2px solid #FE3F71; padding: 23px 0 12px 144px; }
+
+#register .top span { display: inline-block; border-left: 1px solid #ddd; font-size: 22px; color: #8C8C8C; margin-left: 14px; padding-left: 14px; }
+
+#register .main { width: 380px; margin: 0 auto; padding-top: 35px; }
+
+#register .main h4 { font-size: 22px; display: inline-block; margin-left: 70px; }
+
+#register .main .span0 { display: inline-block; border-left: 1px solid #ddd; font-size: 12px; color: #8C8C8C; margin-left: 14px; padding-left: 14px; }
+
+#register .main .span0 a { color: #37A0DB; }
+
+#register .main .form { margin: 50px 0; }
+
+#register .main .form-group { height: 40px; line-height: 40px; margin-bottom: 40px; }
+
+#register .main .form-group label { display: inline-block; width: 70px; height: 40px; text-align: right; font-size: 14px; color: #4D4D4D; }
+
+#register .main .form-group input { border: 1px solid #ddd; width: 300px; height: 40px; padding-left: 10px; }
+
+#register .main .form-group i { color: #f00; margin-left: 20px; }
+
+#register .main .form-group #jiaoyan { width: 150px; }
+
+#register .main .form-group #yanzheng { width: 200px; display: inline-block; float: left; }
+
+#register .main p { margin-left: 70px; }
+
+#register .main p .zuce { display: block; margin-top: 25px; width: 300px; height: 40px; line-height: 40px; text-align: center; background: #FE3F71; }
+
+#register .main p .zuce a { display: block; font-size: 20px; color: #fff; }
+
+#register .main .huo { position: relative; }
+
+.huoqu { position: absolute; top: 0; right: 0; width: 100px; height: 40px; line-height: 40; text-align: center; background: #FE3F71; }
+
+.huoqu .a1 { display: block; color: #fff; font-size: 14px; }

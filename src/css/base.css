@@ -121,15 +121,45 @@ s,i,em{font-style:normal;text-decoration:none;}
 .header_t .header_tl i.icon-weibo{display: inline-block;font-size:18px;color:#FF111D;}
 .header_t .header_tl i:hover{color:#F6AB00;}
 
+
+
+
+
+.header_t .wx_erweima,.header_t .wb_erweima{display: none;z-index:1000000;width: 550px;height: 320px;background:#fff;border-radius:10px;position:absolute;top:35px;left:300px;}
+
+.header_t .wx_erweima .title,.header_t .wb_erweima .title{border-bottom:1px solid #ddd;padding:10px;}
+.header_t .wx_erweima .title i,.header_t .wb_erweima .title i{color:#F6AB00;}
+.header_t .wx_erweima .title span,.header_t .wb_erweima .title span{border-right:none;font-size:16px;cursor:pointer;}
+.header_t .wx_erweima .content,.header_t .wb_erweima .content{padding:10px 0 10px 10px;border-bottom:1px solid #ddd;}
+.header_t .wx_erweima .close,.header_t .wb_erweima .close{font-size:12px;padding:20px;color:black;cursor:pointer;}
+
+
+
+
+.overlay{z-index:100000;display: none;position:fixed;top:0;bottom:0;right:0;left:0;background-color:rgba(0,0,0,0.6);}
+
+
+
+
+
+
 .header_t .header_tr span{border-right:2px solid #B099B0;padding:0 8px;font-size:12px;color:#37A0DB;position:relative;}
 .header_t .header_tr span.last{border-right:none;}
 .header_t .header_tr span:hover{color:#F6AB00;cursor:pointer;}
 .header_t .header_tr span a:hover{color:#F6AB00;cursor:pointer;}
 .header_t .header_tr span i.icon-arrow{font-size:1px;padding:0 5px;}
 
-.header_t .header_tr ul{border:1px solid #ddd;width: 150px;position:absolute;top:25px;left:10px;display: none;}
-.header_t .header_tr ul li{font-size: 12px;line-height:20px;padding-left:10px;}
+.header_t .header_tr .shenghuo:hover>ul{display: block;}
+.header_t .header_tr .bangzu:hover>ul{display: block;}
+.header_t .header_tr .gengduo:hover>ul{display: block;}
+
+
+
+
+.header_t .header_tr ul{border:1px solid #ddd;width: 150px;position:absolute;top:22px;left:10px;display: none;z-index: 1000000000000000;background:#fff;}
+.header_t .header_tr ul li{font-size: 12px;line-height:20px;padding-left:10px;color:#000;}
 .header_t .header_tr ul li:hover{color:#F6AB00;background:#ddd;}
+
 
 
 .header_c{height: 100px;padding-left:20px;}
@@ -257,10 +287,19 @@ top:16px;right:30px;}
 .fix{width: 36px;height: 100%;background:#30B1FB;position:fixed;right:0;top:0;}
 .fix .fix1{position:absolute;top:60px;background:#fff;border-radius:50%;}
 .fix .fix2 i{position:absolute;top:130px;right:13px;color:#F6AB00;font-size:16px;}
+
+
+
+/*.fix .fix2 .gouwuche{width: 300px;height: 200px;font-size:16px;border:1px solid #ddd;padding:10px;position:absolute;top:0;left:-400px;display: none;}
+.fix .fix2 i:hover .gouwuche{display: block;}
+.fix .fix2 .gouwuche h4{border-bottom:1px solid #ddd;padding-bottom:10px;}
+*/
+
+
 .fix .fix3 i{position:absolute;top:210px;right:13px;color:#F6AB00;font-size:16px;}
 .fix .fix4 i{position:absolute;top:270px;right:13px;color:#F6AB00;font-size:16px;}
 .fix .fix5 i{position:absolute;top:320px;right:13px;color:#F6AB00;font-size:16px;}
 .fix .fix6 i{position:absolute;top:370px;right:13px;color:#F6AB00;font-size:16px;}
 .fix .fix7 i{position:absolute;top:420px;right:13px;color:#F6AB00;font-size:16px;}
-.fix .fix8 i{position:absolute;top:480px;right:13px;color:#fff;font-size:16px;}
+.fix .fix8 .toTop{display:none;position:absolute;top:480px;right:13px;color:#fff;font-size:16px;}
 .fix .fix3:hover i,.fix .fix4:hover i,.fix .fix5:hover i,.fix .fix6:hover i,.fix .fix7:hover i{color:#fff;}

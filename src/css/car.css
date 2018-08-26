@@ -1,0 +1,20 @@
+@charset "UTF-8";
+#main { padding: 20px; }
+
+#main #carList { padding: 20px; }
+
+#main #carList li { position: relative; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #ddd; }
+
+#main #carList img { display: block; width: 100px; }
+
+#main #carList li .btn-close { position: absolute; font-size: 22px; top: 0; right: 0; padding: 0 5px; cursor: pointer; }
+
+#main #carList li .btn-close:hover { background-color: #f00; color: #fff; }
+
+#main .subPrice { padding: 5px 20px; color: #f00; font-weight: bold; text-align: right; }
+
+#main #btnClear { border: 1px solid #ddd; display: block; width: 80px; height: 30px; color: #f00; line-height: 30px; text-align: center; }
+
+#main #carList .price span { color: #f00; }
+
+#main .price span::before, #main .subPrice::before { content: '￥'; }

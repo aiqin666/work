@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>详情页</title>
+        <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../lib/jquery-zoom/jquery.zoom.css">
+
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/details.css" />
+    </head>
+    <body>
+
+
+    <!-- 头部 -->
+        <div id="header">
+                <div class="header_t clearfix">
+                    <div class="header_tl fl">
+                        <span>Hi,欢迎来到如此生活</span>
+                        <span><a href="login.html">登录</a></span>
+                        <span><a href="register.html">免费注册</a></span>
+                        <span><a href="#"><i class="weixin iconfont icon-gongzhonghao"></i></a></span>
+                        <span><a href="#"><i  class="weibo iconfont icon-weibo"></i></a></span>
+
+                        <div class="wx_erweima clearfix">
+                            <div class="title clearfix">
+                                <h4 class="fl">关注<i>如此生活</i>官方微信</h4>
+                                <span class="fr guanbi">&times;</span>
+                            </div>
+                            <div class="content">
+                                <img src="../img/wx_erweima.jpg" height="200" width="200" alt="" />
+                            </div>
+                            <p class="close fr">关闭</p>
+                        </div>
+                        <div class="wb_erweima">
+                            <div class="title clearfix">
+                                <h4 class="fl">关注<i>如此生活</i>官方微博</h4>
+                                <span class="fr guanbi">&times;</span>
+                            </div>
+                            <div class="content">
+                                <img src="../img/wb_erweima.jpg" height="200" width="200" alt="" />
+                            </div>
+                            <p class="close fr">关闭</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="header_tr fr">
+                        <span class="shenghuo">我的生活
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="shenghuoul">
+                                <li>我的订单</li>
+                                <li>星币查询</li>
+                                <li>余额查询</li>
+                                <li>我的优惠卷</li>
+                            </ul>
+                        </span>
+                        <span><a href="register.html">商家入驻</a></span>
+                        <span class="bangzu">帮助中心
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="bangzuul">
+                                <li>帮助首页</li>
+                                <li>售后服务</li>
+                                
+                            </ul>
+                        </span>
+                        <span class="last gengduo">更多导航
+                            <i class="iconfont icon-arrow"></i>
+                            <ul class="gengduoul">
+                                <li>首页</li>
+                                <li>海外精品</li>
+                                <li>星范儿</li>
+                                <li>星特惠</li>
+                                <li>星粉专区</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="header_c clearfix">
+                    <div class="fl header_c1"><a href="#"><img src="img/logo.png" /></a></div>
+                    <div class="fl header_c2">
+                        <div class="header_c2t">
+                            <span>商品</span>
+                            <span>店铺</span>
+                        </div>
+                        <div class="header_c2c">
+                            <input type="text" placeholder="格力" /><button class="btnSearch">搜索</button>
+                        </div>
+                        <ul class="clearfix header_c2b">
+                            <li class="fl"><a href="#">山茶油</a></li>
+                            <li class="fl"><a href="#">iphone X</a></li>
+                            <li class="fl"><a href="#">COACH</a></li>
+                            <li class="fl"><a href="#">韩都衣舍</a></li>
+                            <li class="fl"><a href="#">ARTIART不倒杯</a></li>
+                            <li class="fl"><a href="#">清风</a></li>
+                            <li class="fl"><a href="">三只蚂蚁</a></li>
+                            <li class="fl last"><a href="#">卡罗特</a></li>
+                        </ul>
+                    </div>
+                    <div class="fl header_c3 clearfix">
+                        <a href="#"><img src="img/phone.png" class="fl phone" /></a>
+                        <b><a href="#">400-068-5151</a></b>
+                        <b><a href="#">021-2356002</a></b>
+                        <p><a href="#">服务热线|周一至周日&nbsp;9:00-21:00</a></p>
+                    </div>
+                </div>
+        </div>
+        <p class="pp">买的值海外专卖店</p>
+    <!-- 导航条 -->
+        <div id="daohang">
+            <ul class="clearfix fl">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="#">店铺全部分类</a></li>
+                <li><a href="#">所有宝贝</a></li>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">店铺优惠卷</a></li>
+                <li><a class="last" href="#">关注店铺</a></li>
+            </ul>
+        </div>
+        <p class="pp2"><i class="glyphicon glyphicon-home"></i>如此生活 》买的值海外专卖店</p>
+        <div id="main">
+            <div class="container">
+                <div class="xiangqing clearfix">
+                    <div class="div_l fl tab">
+                        <div class="content">
+                            <div class="goods">
+                                <img id="img" src="../img/details_x1.jpg" data-big="../img/details_x1.jpg"/>
+                            </div>
+                            <!-- <div><img src="../img/details_x2.jpg" /></div>
+                            <div><img src="../img/details_x3.jpg" /></div>
+                            <div><img src="../img/details_x4.jpg" /></div>
+                            <div><img src="../img/details_x5.jpg" /></div> -->
+                        </div>
+                        <ul class="bottom small clearfix">
+                            <li class="fl"><img class="xiao" src="../img/details_x1.jpg" data-big="../img/details_x1.jpg"/></li>
+                            <li class="fl"><img src="../img/details_x2.jpg" data-big="../img/details_x2.jpg"/></li>
+                            <li class="fl"><img src="../img/details_x3.jpg" data-big="../img/details_x3.jpg"/></li>
+                            <li class="fl"><img src="../img/details_x4.jpg" data-big="../img/details_x4.jpg"/></li>
+                            <li class="fl"><img src="../img/details_x5.jpg" data-big="../img/details_x5.jpg"/></li>
+                            <span class="zuo"><i class="glyphicon glyphicon-menu-left"></i></span>
+                            <span class="you"><i class="glyphicon glyphicon-menu-right"></i></span>
+                        </ul>
+                    </div>
+                    <div class="div_c fl">
+                        <p id="names">买的值海外专卖店手提包</p>
+                        <div class="div_c2">
+                            <p class="sale"><span class="sales">415.00</span><b>如此生活价</b></p>
+                            <p class="price">(参考价<del>￥649.00</del>)</p>
+                            <p><span class="huodong">享受的活动：[满额包邮]</span><span>满300元包邮</span></p>
+                            <img src="../img/details_erweima.png" height="115" width="118" alt="" />
+                        </div>
+                        <div class="div_c3">
+                            <p clas="pingjia"><span>评价</span><img src="../img/pingjia_x.png" height="18" width="82" alt="" /></p>
+                            <p><span>送至</span><input type="select" class="select"/></p>
+                            
+                            <p><span>规格</span><span class="guige">25 &times; 25 &times;  14 cm</span></p>
+                            <p class="number"><span>数量</span><button class="jian">-</button><input type="text" class="num"/><button class="jia">+</button></p>
+                            <p class="lastp">
+                                <a class="goumai" href="login.html">立即购买</a>
+                                <a class="jiaru"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</a>
+                                <a class="guanzhu" href="#"><i class="glyphicon glyphicon-star-empty"></i>关注</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div_r fl">
+                        <h4>店铺信息</h4>
+                        <img class="zhi" src="../img/zhi.png" height="101" width="101" alt="" />
+                        <div class="div_r2">
+                            <p class="maijia">卖家：<span class="maide">买的值海外专卖店</span></p>
+                            <p><span>商品包装：</span><img src="../img/pingjia_d.png" alt="" /></p>
+                            <p><span>送货速度：</span><img src="../img/pingjia_d.png"  alt="" /></p>
+                            <p><span>配送服务：</span><img src="../img/pingjia_d.png" alt="" /></p>
+                            <p>
+                                <a class="dianpu"><i class="glyphicon glyphicon-log-in"></i>进入店铺</a><a class="kefu"><i class="glyphicon glyphicon-earphone"></i>在线客服</a>
+                            </p>
+                            <p class="biaoqian">产品标签</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main0 clearfix">
+                    <div class="main01 fl">
+                        <ul class="clearfix">
+                            <li><a href="#">商品规格</a></li>
+                            <li><a href="#">商品详情</a></li>
+                            <li><a href="#">包装清单</a></li>
+                            <li><a href="#">用户评论</a></li>
+                        </ul>
+
+                        <div class="deal_con_content">
+                            <table border="0" cellpadding="0" cellspacing="0" style="font-family:arial;width: 100%">
+                                <tbody>
+                                    <tr>
+                                        <td width="85"><b>商品名称：</b></td>
+                                        <td><span>Longchamp 珑骧 尼龙手提折叠长柄女包饺子 小号</span></td>
+                                        <td width="100" style="padding-right:0;" rowspan="6"><img width="100" src="https://img103.soolife.cn/goods/fdc80f973748e7134231aae0f26d8a39.jpg" title="" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>品牌：</b></td>
+                                        <td><span>龙骧</span></td>
+                                    </tr>
+                                </tbody>                                   
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" style="font-family:arial;">
+                                <tbody>
+                                    <tr>
+                                        <td width="85"><b>特别说明：</b></td>
+                                        <td style="padding: 4px;"><span>因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，
+                                            本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。网站商
+                                            品的功能参数仅供参考，请以实物为准，我司只能确保网站经营商品均为原厂
+                                            正品行货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，
+                                            请大家谅解！ </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>服务承诺：</b></td>
+                                        <td style="padding: 4px;"><span>如此生活向您保证销售商品均为正品行货并开具正规发票。凭 如此生
+                                            活发票，所有商品均可以享受生产厂家的全国联保服务或指定服务商联保服务，
+                                            如此生活将严格按照国家三包政策以及本《退换货政策》，对所售商品履行换
+                                            货和退货的义务。 </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>权利声明：</b></td>
+                                        <td style="padding: 4px;"><span>如此生活上的所有商品信息、客户评价、商品咨询、网友讨论等内容，
+                                            是如此生活重要的经营资源，未经许可，禁止非法转载使用。注：本站商
+                                            品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作
+                                            方）负责。本站不提供任何保证，并不承担任何法律责任 </span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="deal_con" id="details">
+                        <div class="block_title title_story"></div>
+                        <div class="deal_con_content">
+                            <p><img src="https://img108.soolife.cn/others/dab943365b44687ef55d5d0798e59a9c.jpg"><img src="https://img108.soolife.cn/others/f5379b241ad0c2781a5f2ed2f9f2f399.jpg"><img src="https://img110.soolife.cn/others/76e8ea3facc6a15e878c4f788e76c544.jpg"><img src="https://img109.soolife.cn/others/461c964f775a744005c2388a2c61987c.jpg"><img src="https://img110.soolife.cn/others/1141193ae99058e1008ed67091d49f51.jpg"><img src="https://img101.soolife.cn/others/f65ec3729c5b01bc7563aa470940327b.jpg"><img src="https://img101.soolife.cn/others/658373de3c16214aff70bdf8ee5e5f48.jpg"><img src="https://img109.soolife.cn/others/711257cc6d301bde29160408db7a2386.jpg"><img src="https://img102.soolife.cn/others/a629ba3e8ffa91e027251ec66442bf5d.jpg"><img src="https://img110.soolife.cn/others/03966258dddc75f16567f8d546fa65b8.jpg"></p>  
+                        </div>
+                    </div>
+                    </div>
+                    <div class="main02 fl clearfix">
+                        <h4 class="dian">店铺承诺</h4>
+                        <a class="aa" href="#"><img src="../img/chengnuo1.png" height="52" width="51" alt="" /><span>100%正品保证</span></a>
+                        <a class="aa" href="#"><img src="../img/chengnuo2.png" height="52" width="52" alt="" /><span>商品质量保险</span></a>
+                        <a class="aa" href="#"><img src="../img/chengnuo3.png" height="51" width="51" alt="" /><span>7天无条件退货</span></a>
+                        <div class="div_r fl">
+                            <h4>店铺信息</h4>
+                            <img class="zhi" src="../img/zhi.png" height="101" width="101" alt="" />
+                            <div class="div_r2">
+                                <p class="maijia">卖家：<span class="maide">买的值海外专卖店</span></p>
+                                <p><span>商品包装：</span><img src="../img/pingjia_d.png" alt="" /></p>
+                                <p><span>送货速度：</span><img src="../img/pingjia_d.png"  alt="" /></p>
+                                <p><span>配送服务：</span><img src="../img/pingjia_d.png" alt="" /></p>
+                                <p>
+                                    <a class="dianpu"><i class="glyphicon glyphicon-log-in"></i>进入店铺</a><a class="kefu"><i class="glyphicon glyphicon-earphone"></i>在线客服</a>
+                                </p>
+                               <img class="" src="../img/erweima.png" height="223" width="199" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- footer -->
+            <div id="footer">
+                <div class="footer_t clearfix">
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-tubiaozhizuomoban- fl"></i>
+                        <div class="fl">
+                            <p>新手指南</p>
+                            <span><a href="#">免费注册</a></span>
+                            <span><a href="#">搜索商品</a></span>
+                            <span><a href="#">购买流程</a></span>
+                            <span><a href="#">评论晒单</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-feiji- fl"></i>
+                        <div class="fl">
+                            <p>配送方式</p>
+                            <span><a href="#">配送方式</a></span>
+                            <span><a href="#">配送指南</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-zhifufangshi fl"></i>
+                        <div class="fl">
+                            <p>支付方式</p>
+                            <span><a href="#">支付宝支付</a></span>
+                            <span><a href="#">银联卡支付</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-qiantaifuwu- fl"></i>
+                        <div class="fl">
+                            <p>售后服务</p>
+                            <span><a href="#">售后政策</a></span>
+                            <span><a href="#">退款说明</a></span>
+                        </div>
+                    </div>
+                    <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-xinxinicon fl"></i>
+                        <div class="fl">
+                            <p>招商合作</p>
+                            <span><a href="#">商家入驻</a></span>
+                            <span><a href="#">企业会员</a></span>
+                        </div>
+                    </div>
+                      <div class="clearfix footer_ta fl">
+                        <i class="iconfont icon-fuwu fl"></i>
+                        <div class="fl">
+                            <p>购物指南</p>
+                            <span><a href="#">星币说明</a></span>
+                            <span><a href="#">交易条款</a></span>
+                            <span><a href="#">购物流程</a></span>
+                            <span><a href="#">注册流程</a></span>
+                            <span><a href="#">常见问题</a></span>
+                        </div>
+                    </div>     
+                </div>
+                <div class="footer_c clearfix">
+                    <div class="footer_c1 fl clearfix">
+                        <a href="#">
+                            <img src="img/footer1.png"  class="img fl" />
+                            <b class="fl">020双线开放</b>
+                            <p class="fl">
+                                <i class="span1">线上分享互联网广告资源</i>
+                                <i class="span2">线下分享多门店粉丝资源</i>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer_c2 fl">
+                        <a href="#">
+                            <img src="img/footer2.png"  class="img fl" />
+                            <b class="fl">N多服务吃到饱</b>
+                            <p class="fl">
+                                <i class="span1">商家免运营，商家免开店，商家免推广</i>
+                                <i class="span2">电脑，手机，平板，电视和社会化媒体等引流资源</i>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer_c3 fl">
+                        <a href="#">
+                            <img src="img/footer3.png"  class="img fl" />
+                            <b class="fl">核心优势</b>
+                            <p class="fl">
+                                <i class="span1">互动体验强，粉丝经济好</i>
+                                <i class="span2">空间范围广，增值服务多</i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_b">
+                    <div class="footer_b1">
+                        <span><a href="#">关于我们</a></span>
+                        <span><a href="#">联系我们</a></span>
+                        <span><a href="#">品牌介绍</a></span>
+                        <span><a href="#">商家入驻</a></span>
+                        <span><a href="#">友情链接</a></span>
+                        <span><a href="#">法律声明</a></span>
+                        <span><a href="#">出版物许可证</a></span>
+                    </div>
+                    <p>@ 2016-2018 如此生活 版权所有 沪ICP备11038000号-2</p>
+                </div>
+                <!-- 固定右边 -->
+                <div class="fix">
+                    <a class="fix1" href="#"><img src="img/jingling.png" height="28" width="30" alt="" /></a>
+                    <a class="fix2 " href="car.html">
+                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                        <!-- <div class="gouwuche">
+                            <h4>成功加入购物车</h4>
+                            现在可以<a href="car.html">去结算</a>
+
+                        </div> -->
+                    </a>
+                    <a class="fix3 " href="#"><i class="glyphicon glyphicon-briefcase"></i></a>
+                    <a class="fix4" href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+                    <a class="fix5" href="#"><i class="glyphicon glyphicon-star-empty"></i></a>
+                    <a class="fix6" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a class="fix7" href="#"><i class="glyphicon glyphicon-user"></i></a>
+                    <a class="fix8" href="#"><i class=" toTop glyphicon glyphicon-eject"></i></a>
+                </div>  
+            </div>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="../lib/jquery-zoom/jquery.zoom.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/details.js"></script>
+    </body>
+</html>
+
+
+

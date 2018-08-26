@@ -185,7 +185,7 @@
 
 
 /*固定右边*/
-.fix{width: 36px;height: 100%;background:#30B1FB;position:fixed;right:0;top:0;}
+.fix{width: 36px;height: 100%;background:#30B1FB;position:fixed;right:0;top:0;z-index: 100000000000;}
 .fix .fix1{position:absolute;top:60px;background:#fff;border-radius:50%;}
 .fix .fix2 i{position:absolute;top:130px;right:13px;color:#F6AB00;font-size:16px;}
 .fix .fix3 i{position:absolute;top:210px;right:13px;color:#F6AB00;font-size:16px;}

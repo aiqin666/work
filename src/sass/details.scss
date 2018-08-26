@@ -1,0 +1,211 @@
+
+.pp{width: 1200px;height: 120px;background:#7CBECC;font-size:54px;color:#fff;line-height:120px;text-align: center;margin-left:15px;}
+
+#daohang{
+    width: 100%;height: 40px;background:#F3A500;padding:0 15px;
+    ul{
+        
+
+        li{float:left;
+            a{display: block;border-left:1px solid #EF8F01;padding:0 45px;color:#fff;line-height:40px;text-align: center;font-size:16px;text-decoration:none;
+                 &:hover{text-decoration:none;}
+            }
+
+            .last{border-right:1px solid #EF8F01;}
+        }
+    }
+}
+.pp2{
+    height: 56px;background:#FBFBFB;line-height:56px;padding-left:15px;color:#337AB7;
+    i{color:#43ABE3;margin-right:5px;}
+}
+
+
+#main .container .xiangqing{
+    border-top:1px solid #E7E7E7;margin-left:-15px;
+    .tab{width: 401px;border-right:1px solid #ddd;
+        
+
+        .content{width: 400px;height: 400px;overflow:hidden;
+            div{padding:1px;
+                img{display:block;width: 385px;height: 385px;}
+                
+            }
+        }
+        
+        .bottom{width: 400px;height: 70px;position:relative;padding-left:20px;
+            li{float:left;border:1px solid #ddd;width: 60px;height:60px;margin-right:10px;padding:5px;
+
+                img{display: block;width: 50px;height: 50px;
+                }
+            }
+
+
+            .zuo{display: block;position:absolute;top:15px;;left:-4px;cursor:pointer;color:#F7AD00;}
+            .you{display: block;position:absolute;top:15px;right:13px;cursor:pointer;color:#F7AD00;}
+            i{font-size:20px;}
+        }
+
+
+       
+    }
+    .div_c{width:530px;border-right:1px solid #ddd;
+        #names{
+            height: 100px;border-bottom:1px solid #ddd;font-size:20px;padding:25px 0 0 12px;color:#37A0DC;font-weight:bold;
+        }
+        
+        .div_c2{
+            height:115px;background:#F7F7F7;padding-left:12px;position:relative;
+            b{color:#0068C4;}
+            span .sales{color:#CC0000;font-size:24px;margin-right:17px;
+                
+                &::before{
+                    content:"￥";
+                    font-size:14px;
+                }
+
+            }
+            .price{padding:10px 0 5px 0;}
+            .huodong{
+                color:#FF0000;font-size:14px;
+            }
+            img{display: block;position:absolute;top:0;right:0;
+            }
+        }
+
+        .div_c3{
+            padding:10px 0 0 20px;
+
+            p{height: 50px;
+                span{margin-right:20px;}
+
+            }
+            .number{position:relative;}
+            .select{border:1px solid #ddd;width: 85px;height: 30px;}
+            button{width: 30px;height: 30px;border:1px solid #ddd;font-size:18px;color:#999;background:#F9F9F9;}
+            .jian{position:absolute;top:0;left:15;}
+            .jia{position:absolute;top:0;left:123px;}
+            .num{width: 50px;height: 30px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#F9F9F9;margin-left:30px;}
+            .guige{display: inline-block;border:1px solid #F6AB00;width: 136px;height: 33px;color:#66667D;line-height:33px;text-align: center;font-size:14px;
+            }
+            
+            .lastp{height: 40px;
+
+               
+
+            }
+            .goumai{display: inline-block;width: 66px;height: 32px;background:#F6AB00;color:#fff;line-height:32px;text-align: center;margin-right:3px;}
+            .jiaru{display: inline-block;width: 100px;height: 32px;background:#37A0DB;color:#fff;line-height:32px;text-align: center;margin-right:3px;cursor:pointer;}
+            .guanzhu{display: inline-block;width: 66px;height: 32px;border:1px solid #ddd;color:#333333;line-height:32px;text-align: center;margin-right:3px;
+                &:hover{color:#F6AB00;}
+            }
+                i{margin-right:3px;}
+           
+        }
+
+    }
+    .div_r{width:268px;
+
+        h4{
+            height: 60px;border-bottom:1px solid #ddd;font-size:18px;font-weight:bold;padding:32px 0 0 12px;margin-bottom:15px;
+        }
+        .zhi{display: block;margin-left:84px;
+        }
+
+
+        .div_r2{
+            
+            p{padding-left:12px;font-size:18px;line-height:30px;height: 40px;
+                span{font-size:14px;}
+
+               
+            
+            }
+                .dianpu{display: inline-block;width: 86px;height: 30px;background:#37A0DB;color:#fff;line-height:30px;text-align: center;margin-right:10px;margin-left:32px;
+                
+                }
+
+                .kefu{display: inline-block;width: 96px;height: 30px;background:#F6AB00;color:#fff;line-height:30px;text-align: center;
+                
+                }
+                i{margin-right:5px;}
+                .maide{color:#337AB7;}
+               
+            
+            .biaoqian{margin-top:30px;border-bottom:1px solid #ddd;}
+        }
+    }
+}
+
+
+
+
+
+.main0{
+    background:#FBFBFB;padding-top:20px;
+
+    .main01{
+        background:#fff;margin-right:10px;width: 922px;
+        
+        ul{
+            height: 40px;line-height:40px;
+            li{float:left;
+                
+                a{margin:0 30px;font-size:16px;color:#333;text-decoration:none;
+                }
+            
+            .fixed{
+                position:fixed;top:0;left:0;right:0;
+            }
+
+
+
+            }
+        }
+    }
+    .main02{
+        background:#fff;width: 260px;padding-left:12px;
+        .dian{
+            height: 40px;line-height:40px;font-size:18px;border-bottom:1px solid #ddd;
+        }
+        .aa{float:left;margin:10px 15px;
+            span{display: block;
+            }
+        }
+
+        .div_r{width:268px;
+
+        h4{
+            height: 60px;border-bottom:1px solid #ddd;margin-bottom:10px;font-size:18px;padding:32px 0 10px 12px;
+        }
+        .zhi{display: block;margin-left:84px;
+        }
+
+
+        .div_r2{
+            
+            p{padding-left:12px;font-size:18px;line-height:30px;height: 40px;
+                span{font-size:14px;}
+
+               
+            
+            }
+                .dianpu{display: inline-block;width: 86px;height: 30px;background:#37A0DB;color:#fff;line-height:30px;text-align: center;margin-right:10px;margin-left:32px;
+                
+                }
+
+                .kefu{display: inline-block;width: 96px;height: 30px;background:#F6AB00;color:#fff;line-height:30px;text-align: center;
+                
+                }
+                i{margin-right:5px;}
+                .maide{color:#337AB7;}
+               
+            
+            
+        }
+        .img{margin:30px 0 0 30px;}
+    }
+    }
+}
+
+ .deal_con_content{margin-top:20px;}

@@ -13,30 +13,56 @@
 
         jQuery(function($){
 
-            $('#top').load('../src/html/list.html #header',function(){
+           
+
+            
+            $('h1').on('click',function(){
+                $('h1').next('ul').slideToggle('slow');
 
 
 
-            });
 
-            $('#nav').load('../src/html/list.html #nav',function(){
-
-                $('h1').on('click',function(){
-                    $('h1').next('ul').slideToggle('slow');
-
-
-                });
-
-
-
-            });
-
-
-            $('#footer').load('../src/html/list.html #footer',function(){
-
+            // $('.shenghuo').click(function(){
+            //     $('.shenghuoul').toggle();
+            // }),function(){
+            //     $('.shenghuoul').toggle();
+            // }
+           
 
             });
 
+        
+
+            // (function(){
+
+            //     let shenghuo = document.querySelector('.shenghuo');
+
+            //     let shenghuoul = document.querySelector('.shenghuoul');
+            //     shenghuo.onclick = function(){
+
+            //         shenghuoul.style.display = 'block';
+            //       }
+
+
+
+            //     let bangzu = document.querySelector('.bangzu');
+
+            //     let bangzuul = document.querySelector('.bangzuul');
+            //     bangzu.onclick = function(){
+
+            //         bangzuul.style.display = 'block';
+            //       }
+
+
+            //     let gengduo = document.querySelector('.gengduo');
+
+            //     let gengduoul = document.querySelector('.gengduoul');
+            //     gengduo.onclick = function(){
+
+            //         gengduoul.style.display = 'block';
+            //       }
+
+            // })();
 
 
 
@@ -111,6 +137,94 @@
 
 
 
+         (function(){
+
+            let toTop = document.querySelector('.toTop');
+
+
+
+            window.onscroll = function(){
+                if(window.scrollY >= 800){
+                    toTop.style.display = 'block';
+                }else{
+                    toTop.style.display = 'none';
+                }
+            }
+
+
+
+           toTop.onclick = function(){
+
+                let timer = setInterval(()=>{
+
+                    // 计算缓冲速度
+                    let speed = Math.ceil(window.scrollY/5);
+
+                    scrollBy(0,-speed);
+
+                    if(window.scrollY <= 0){
+                        clearInterval(timer);
+                    }
+                },100);
+           }
+
+
+        })();   
+
+
+
+        (function(){
+            
+          
+            $('.weixin').on('click',function(){
+
+                $('.overlay').show();
+                $('.wx_erweima').show();
+        
+            });
+
+             $('.close').on('click',function(){
+
+                $('.overlay').hide();
+                $('.wx_erweima').hide();
+        
+            });
+
+              $('.guanbi').on('click',function(){
+
+                $('.overlay').hide();
+                $('.wx_erweima').hide();
+        
+            });
+
+
+               $('.weibo').on('click',function(){
+
+                $('.overlay').show();
+                $('.wb_erweima').show();
+        
+            });
+
+             $('.close').on('click',function(){
+
+                $('.overlay').hide();
+                $('.wb_erweima').hide();
+        
+            });
+
+              $('.guanbi').on('click',function(){
+
+                $('.overlay').hide();
+                $('.wb_erweima').hide();
+        
+            });
+
+
+        })();
+
+
+
+
         });
 
 
@@ -118,33 +232,5 @@
 
 
            
-
-        // (function(){
-
-        //     var goods = [{
-        //             id:001,
-        //             name:"DW女士石英表",
-        //             imgurl:"../img/xx.png"
-        //         },{
-        //             id:002,
-        //             name:"创悦 足浴盆",
-        //             imgurl:"../img/xx.png"
-        //         },{
-        //             id:003,
-        //             name:"祛斑美白丸",
-        //             imgurl:"../img/xx.png"
-        //         },{
-        //             id:004,
-        //             name:"水素生活",
-        //             imgurl:"../img/xx.png"
-        //         },{
-        //             id:005,
-        //             name:"麦饭石多用厨具",
-        //             imgurl:"../img/xx.png"
-        //         }]
-
-
-
-        // });
 
     
